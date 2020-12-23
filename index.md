@@ -1,5 +1,9 @@
-{% for song in site.data.IndhaMinminikku %}
+---
+title: Music
+track: IndhaMinminikku
+---
+{% assign track = site.data.IndhaMinminikku.[page.track] %}
+
 <ul>
-({{ song.Singer | size }} Singer)
+{{ track.IndhaMinminikku }}
 </ul>
-{% endfor %}
