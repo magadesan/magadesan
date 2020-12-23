@@ -1,2 +1,2 @@
-{% assign music = site.data.IndhaMinminikku %}
-    {{ music.Track }}
+site.data.IndhaMinminikku
+site.data.Duration
