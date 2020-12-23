@@ -1,9 +1,4 @@
----
-title: Music
-track: IndhaMinminikku
----
-{% assign track = site.data.IndhaMinminikku.[page.track] %}
-
+{% assign track = site.data.IndhaMinminikku.IndhaMinminikku %}
 <ul>{{ track.Album }}</ul>
 <ul>{{ track.Duration }}</ul>
 <ul>{{ track.Duration }}</ul>
