@@ -6,6 +6,6 @@
   <li>{{ member.Artist }}</li>
   <li>{{ member.Year }}</li>
   <li>{{ member.Label }}</li>
-  <li>{{ member.Kannadasan }}</li>
+  <li>{{ member.Lyrics }}</li>
 {% endfor %}
 </ul>
