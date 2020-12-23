@@ -5,7 +5,7 @@
   <li>{{ member.Album }}</li>
   <li>{{ member.Artist }}</li>
   <li>{{ member.Year }}</li>
-  <li>{{ member.Label }}</li>
   <li>{{ member.Lyrics }}</li>
+  <li>{{ member.Label }}</li>
 {% endfor %}
 </ul>
