@@ -1,4 +1,4 @@
-9:01
+9:06
 <ul>
 {% for member in site.data.song %}
   <li>{{ member.Track }}</li>
@@ -8,10 +8,7 @@
   <li>{{ member.Year }}</li>
   <li>{{ member.Label }}</li>
   <li>{{ member.Lyrics }}</li>
-  <ul>
-  {% for singers in member.Singers %}
-    <li>{{ singers.singer }}</li>
-  {% endfor %}
+    ({{ member.Singers | size }} Singers)
   </ul>
 {% endfor %}
 </ul>
