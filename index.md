@@ -1,5 +1,5 @@
+{% assign song = site.data.IndhaMinminikku %}
 <ul>
-{% for song in site.data.IndhaMinminikku %}
-  <li>{{ song.Singer }}</li>
-{% endfor %}
+({{ song.Singer | size }} Singer)
 </ul>
+{% endfor %}
