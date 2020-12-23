@@ -1,2 +1,2 @@
-{% assign music = site.data.Indha Minminikku %}
+{% assign music = site.data.IndhaMinminikku %}
     {{ music.Track }}
