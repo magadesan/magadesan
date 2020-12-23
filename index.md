@@ -1,5 +1,9 @@
-{% assign track = site.data.IndhaMinminikku.TrackId %}
-<ul>{{ track.Album }}</ul>
-<ul>{{ track.Duration }}</ul>
-<ul>{{ track.Duration }}</ul>
-<ul>{{ track.Year }}</ul>
+<ul>
+{% for member in site.data.IndhaMinminikku %}
+  <li>
+    <a href="https://github.com/{{ member.TrackId }}">
+      {{ member.TrackId }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
