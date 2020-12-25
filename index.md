@@ -8,5 +8,6 @@
   <li>{{ member.Year }}</li>
   <li>{{ member.Label }}</li>
   <li>{{ member.Lyrics }}</li>
+  <li>{{ member.Singers[0] }}</li>
 {% endfor %}
 </ul>
