@@ -1,2 +1,10 @@
 for f in Tamil/*; do ffmpeg -i "$f" -c:a libmp3lame "outputs/${f%.*}.mp3"; done
 for f in Tamil/*; do  /usr/local/mp3agic/mp3details "$f"; done > outputs/mp3.txt
+ffmpeg -i a.mp3 -ar 8000 -write_xing 0 -id3v2_version 0 untagged_down1.mp3
+ffmpeg -i input.mp3 -c:a libmp3lame -q:a 2 -ac 1 output.mp3
+ffmpeg -i a.mp3 -ar 8000 -write_xing 0 -id3v2_version 0 -c:a libmp3lame -q:a 2 -ac 1 untagged_down2.mp3
+
+for f in usbout/*/*; do ffmpeg -i "$f" -ar 8000 -write_xing 0 -id3v2_version 0 "removed/${f%.*}.mp3"; done
+
+  awk -v RS="FileFull: |Album: |Title: " '{gsub("FileFull: |Album: |Title: ","",$0);print $1","$2","$3}' RS='' shortmp3.txt
+AIzaSyB8cOSA42Kj1RVHa4o5BKlCjb1JlQhzkC4
