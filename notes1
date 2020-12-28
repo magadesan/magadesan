@@ -7,3 +7,7 @@ ffmpeg -i a.mp3 -ar 8000 -write_xing 0 -id3v2_version 0 -c:a libmp3lame -q:a 2 -
 for f in usbout/*/*; do ffmpeg -i "$f" -ar 8000 -write_xing 0 -id3v2_version 0 "removed/${f%.*}.mp3"; done
 
   awk -v RS="FileFull: |Album: |Title: " '{gsub("FileFull: |Album: |Title: ","",$0);print $1","$2","$3}' RS='' shortmp3.txt
+  
+  https://acoustid.org/chromaprint
+  fpcalc
+  youtube-dl -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 gufF7UDxAr0
